@@ -1,0 +1,8 @@
+de/farzaneh/simpledev/service/UserService.class
+de/farzaneh/simpledev/model/Location.class
+de/farzaneh/simpledev/model/User.class
+de/farzaneh/simpledev/SimpleDevApplication.class
+de/farzaneh/simpledev/repository/LocationRepository.class
+de/farzaneh/simpledev/repository/UserRepository.class
+de/farzaneh/simpledev/controller/UserController.class
+de/farzaneh/simpledev/dto/UserLocationDTO.class
