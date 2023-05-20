@@ -20,7 +20,7 @@ pipeline {
                          type: 'jar'
                     ]
                 ],
-                 credentialsId: 'nexus3',
+                 credentialsId: 'CredentialsId',
                  groupId: 'de.farzaneh',
                  nexusUrl: 'localhost:8081',
                  nexusVersion: 'nexus3',
