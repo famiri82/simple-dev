@@ -7,7 +7,7 @@ pipeline {
 	stages{
         stage('Build'){
             steps{
-                 sh script: 'mvn clean package -X'
+                 sh script: 'mvn clean package'
             }
         }
         stage('Upload War To Nexus'){
@@ -26,7 +26,7 @@ pipeline {
                  nexusVersion: 'nexus3',
                  protocol: 'http',
                  repository: 'farzaneh-maven-releases',
-                 version: '0.0.3'
+                 version: '0.0.5'
             }
         }
 	}
