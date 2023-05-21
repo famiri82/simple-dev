@@ -39,6 +39,11 @@ then we can use the syntax of maven in stages
 it checks our source code from git, so we do not say git stage in our pipeline again
 8. nexus url: **composetest-nexus-1:8081** , *composetest-nexus-1* is the name of nexus container in docker
 9. using settings.xml : Global Tool Configuration>> Default global settings provider >>>> File path : settings.xml
+10. deploy to nexus with two different ways:
+- using *mvn -s settings.xml deploy* stage, we should change version and localhost (with nexus container) in the pom.xml 
+- also add settings.xml file in root of project (with changes of localhost to nexus container name)
+- in another way we can deploy and upload to nexus using nexusArtifactUploader in the jenkins, then use that inside Jenkinsfile
+- in both of the ways we should start our containers (nexus and jenkins) with the same network in the docker, therefore they can see each other
 
 
     
