@@ -1,5 +1,0 @@
-<mirror>
-    <id>nexus3</id>
-    <mirrorOf>*</mirrorOf>
-    <url>http://localhost:8081/repository/farzaneh-maven-group/</url>
-</mirror>
