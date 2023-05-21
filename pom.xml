@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>de.farzaneh</groupId>
 	<artifactId>simple-dev</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.4</version>
 	<name>simple-dev</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -47,16 +47,21 @@
 			<artifactId>modelmapper</artifactId>
 			<version>3.1.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-settings-builder</artifactId>
+			<version>3.0</version>
+		</dependency>
 	</dependencies>
 
 	<distributionManagement>
 		<repository>
-			<id>nexus</id>
+			<id>nexus3</id>
 			<name>releases</name>
 			<url>http://localhost:8081/repository/farzaneh-maven-releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus</id>
+			<id>nexus3</id>
 			<name>snapshots</name>
 			<url>http://localhost:8081/repository/farzaneh-maven-snapshots/</url>
 		</snapshotRepository>
@@ -64,7 +69,7 @@
 
 	<build>
 		<finalName>simple-dev</finalName>
-		<plugins>
+	        <plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
