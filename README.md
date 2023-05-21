@@ -19,6 +19,9 @@
 14. check the logs: **docker logs <container-id>**
 15. watch the logs continuously **docker logs -f <container-id>**
 16. remove container **docker rm <container-id>**
+17. to create an image from container: **docker commit <container> <image>**
+18. to go inside docker container files: **docker exec -it my-jenkins /bin/bash **
+19. connect existing container to a network: **docker network connect <network-name> <container-name> **
 
 
 # Jenkins
@@ -31,10 +34,10 @@ then we can use the syntax of maven in stages
 5. stages: 
 - git checkout (here we put our jenkins file inside project so we dont need this stage)
 - build
-6. **sh** for shel scrips **Snippet Generator** choose Shell Script then write *mvn clean package* it will generate sh command ***sh script:*
+6. **sh** for shel scrips **Snippet Generator** choose Shell Script then write *mvn clean package* it will generate sh command *sh script:*
 7. To pull out script from git >>>> create a pipeline in jenkins, choose **Pipeline script from SCM** 
 it checks our source code from git, so we do not say git stage in our pipeline again
-8. 
+8. nexus url: **composetest-nexus-1:8081** , *composetest-nexus-1* is the name of nexus container in docker
 
 
     

@@ -10,6 +10,11 @@ pipeline {
                  sh script: 'mvn clean package'
             }
         }
+         stage('Deploy'){
+                    steps{
+                         sh script: 'mvn -s settings.xml deploy'
+                    }
+                }
         stage('Upload War To Nexus'){
             steps{
                  nexusArtifactUploader artifacts: [
@@ -22,13 +27,12 @@ pipeline {
                 ],
                  credentialsId: 'nexus3',
                  groupId: 'de.farzaneh',
-                 nexusUrl: 'localhost:8081',
+                 nexusUrl: 'composetest-nexus-1:8081',
                  nexusVersion: 'nexus3',
                  protocol: 'http',
                  repository: 'farzaneh-maven-releases',
-                 version: '0.0.5'
+                 version: '0.0.3'
             }
         }
 	}
 }
-
