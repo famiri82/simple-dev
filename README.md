@@ -34,7 +34,7 @@ then we can use the syntax of maven in stages
 5. stages: 
 - git checkout (here we put our jenkins file inside project so we dont need this stage)
 - build
-6. **sh** for shel scrips **Snippet Generator** choose Shell Script then write *mvn clean package* it will generate sh command *sh script:*
+6. **sh** for shell scrips **Snippet Generator** choose Shell Script then write *mvn clean package* it will generate sh command *sh script:*
 7. To pull out script from git >>>> create a pipeline in jenkins, choose **Pipeline script from SCM** 
 it checks our source code from git, so we do not say git stage in our pipeline again
 8. nexus url: **composetest-nexus-1:8081** , *composetest-nexus-1* is the name of nexus container in docker
@@ -44,6 +44,7 @@ it checks our source code from git, so we do not say git stage in our pipeline a
 - also add settings.xml file in root of project (with changes of localhost to nexus container name)
 - in another way we can deploy and upload to nexus using nexusArtifactUploader in the jenkins, then use that inside Jenkinsfile
 - in both of the ways we should start our containers (nexus and jenkins) with the same network in the docker, therefore they can see each other
+11. useful video: https://www.youtube.com/watch?v=p_Wo3aqUJto&list=PLH1ul2iNXl7sp9w9_QRU4jUvVAuFMoxu2&index=4
 
 
     
