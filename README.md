@@ -38,6 +38,7 @@ then we can use the syntax of maven in stages
 7. To pull out script from git >>>> create a pipeline in jenkins, choose **Pipeline script from SCM** 
 it checks our source code from git, so we do not say git stage in our pipeline again
 8. nexus url: **composetest-nexus-1:8081** , *composetest-nexus-1* is the name of nexus container in docker
+9. using settings.xml : Global Tool Configuration>> Default global settings provider >>>> File path : settings.xml
 
 
     

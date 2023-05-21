@@ -53,12 +53,12 @@
 		<repository>
 			<id>nexus</id>
 			<name>releases</name>
-			<url>http://localhost:8081/repository/farzaneh-maven-releases/</url>
+			<url>http://composetest-nexus-1:8081/repository/farzaneh-maven-releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>nexus</id>
 			<name>snapshots</name>
-			<url>http://localhost:8081/repository/farzaneh-maven-snapshots/</url>
+			<url>http://composetest-nexus-1:8081/repository/farzaneh-maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
