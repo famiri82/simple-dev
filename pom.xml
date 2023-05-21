@@ -56,12 +56,12 @@
 
 	<distributionManagement>
 		<repository>
-			<id>nexus</id>
+			<id>nexus3</id>
 			<name>releases</name>
 			<url>http://localhost:8081/repository/farzaneh-maven-releases/</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus</id>
+			<id>nexus3</id>
 			<name>snapshots</name>
 			<url>http://localhost:8081/repository/farzaneh-maven-snapshots/</url>
 		</snapshotRepository>
