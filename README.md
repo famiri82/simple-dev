@@ -26,6 +26,7 @@
 
 # Jenkins
 1. pipeline syntax: https://www.jenkins.io/doc/book/pipeline/syntax/
+2. jenkins url in local: http://localhost:8181/
 2. starts with: **pipeline{**
 3. agent: the agent where this pipeline should be execute
 - *any* means execute on master or slave, whichever is available and convenient for our master jenkins
